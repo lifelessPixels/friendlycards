@@ -9,7 +9,6 @@ from enums import ConnectionState, RequestStatus
 game_pool = GamePool()
 
 async def server_job(sock, path):
-
     # client connected, do something with it 
     client_state = ConnectionState.CONNECTED
     while client_state != ConnectionState.DISCONNECTED:
